@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melanie Moya | Graphic & Web Designer & Automation Specialist</title>
+
+  <!-- Tailwind CSS & FontAwesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBlue: '#0c2340',
+            brandPink: '#ff3366',
+            brandYellow: '#f59e0b',
+            accentOrange: '#f97316'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-[#f8f9fa] text-slate-800 antialiased font-sans">
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <span class="text-3xl font-black text-brandBlue tracking-tighter">MM<span class="text-brandPink">.</span></span>
+        <span class="text-xs font-bold uppercase tracking-wider text-slate-400 border-l pl-2">Melanie Moya</span>
+      </div>
+      <div class="hidden md:flex items-center space-x-7 text-sm font-semibold text-slate-600">
+        <a href="#home" class="text-brandPink hover:text-brandPink transition">Home</a>
+        <a href="#about" class="hover:text-brandBlue transition">About</a>
+        <a href="#portfolio" class="hover:text-brandBlue transition">Portfolio</a>
+        <a href="#services" class="hover:text-brandBlue transition">Services</a>
+        <a href="#skills" class="hover:text-brandBlue transition">Skills</a>
+        <a href="#resume" class="hover:text-brandBlue transition">Resume</a>
+        <a href="#contact" class="hover:text-brandBlue transition">Contact</a>
+      </div>
+      <a href="#contact" class="bg-gradient-to-r from-amber-500 to-accentOrange text-white px-6 py-2.5 rounded-full font-semibold text-sm shadow hover:opacity-90 transition">
+        Let's Talk <i class="fa-solid fa-paper-plane ml-1"></i>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-6 space-y-6">
+      <span class="text-brandPink font-bold text-lg tracking-wide">Hello, I'm Melanie Moya</span>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-brandBlue leading-tight">
+        Graphic & Web Designer <br>& <span class="text-brandPink">Automation Specialist</span>
+      </h1>
+      <p class="text-slate-500 text-base sm:text-lg max-w-lg leading-relaxed">
+        I combine creative visual design with workflow automation (Google Apps Script & Sheets) to help businesses communicate clearly and operate efficiently.
+      </p>
+      <div class="flex flex-wrap items-center gap-4 pt-2">
+        <a href="#portfolio" class="bg-brandBlue text-white px-7 py-3 rounded-xl font-bold shadow hover:bg-slate-800 transition flex items-center gap-2">
+          View My Work <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+        <a href="#contact" class="bg-brandPink text-white px-7 py-3 rounded-xl font-bold shadow hover:opacity-90 transition flex items-center gap-2">
+          Contact Me <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+      <div class="flex gap-3 pt-4 text-slate-500">
+        <a href="https://linkedin.com/in/melaniemoya" target="_blank" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center hover:bg-brandBlue hover:text-white transition"><i class="fa-brands fa-linkedin-in text-sm"></i></a>
+        <a href="mailto:melanielmoya@gmail.com" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center hover:bg-brandBlue hover:text-white transition"><i class="fa-solid fa-envelope text-sm"></i></a>
+        <a href="tel:09758654226" class="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center hover:bg-brandBlue hover:text-white transition"><i class="fa-solid fa-phone text-sm"></i></a>
+      </div>
+    </div>
+    
+    <!-- Hero Showcase Placeholder -->
+    <div class="lg:col-span-6 flex justify-center">
+      <div class="w-full max-w-lg h-[360px] rounded-3xl border-2 border-dashed border-slate-300 bg-slate-900 flex flex-col items-center justify-center text-slate-400 p-6 text-center shadow-xl">
+        <div class="w-16 h-16 rounded-2xl bg-slate-800 flex items-center justify-center text-2xl text-brandPink mb-3 shadow-inner">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="font-bold text-sm text-slate-200">Featured Design / Work Preview</div>
+        <div class="text-[11px] text-slate-500 mt-1">Recommended size: 800 x 550 px</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK CAPABILITIES -->
+  <section class="max-w-7xl mx-auto px-6 py-4">
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+      <div class="bg-white border border-slate-100 p-4 rounded-2xl flex items-center gap-3 shadow-sm">
+        <div class="w-10 h-10 rounded-xl bg-pink-50 text-brandPink flex items-center justify-center"><i class="fa-solid fa-pen-nib"></i></div>
+        <div class="text-xs font-bold leading-tight">Graphic Design<br><span class="text-slate-400 font-normal">Photoshop & Illustrator</span></div>
+      </div>
+      <div class="bg-white border border-slate-100 p-4 rounded-2xl flex items-center gap-3 shadow-sm">
+        <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-500 flex items-center justify-center"><i class="fa-solid fa-globe"></i></div>
+        <div class="text-xs font-bold leading-tight">Web Development<br><span class="text-slate-400 font-normal">+40% Visibility Boost</span></div>
+      </div>
+      <div class="bg-white border border-slate-100 p-4 rounded-2xl flex items-center gap-3 shadow-sm">
+        <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center"><i class="fa-solid fa-robot"></i></div>
+        <div class="text-xs font-bold leading-tight">Google Apps Script<br><span class="text-slate-400 font-normal">Workflow Automation</span></div>
+      </div>
+      <div class="bg-white border border-slate-100 p-4 rounded-2xl flex items-center gap-3 shadow-sm">
+        <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center"><i class="fa-solid fa-share-nodes"></i></div>
+        <div class="text-xs font-bold leading-tight">Social Media<br><span class="text-slate-400 font-normal">+60% Engagement Rate</span></div>
+      </div>
+      <div class="bg-white border border-slate-100 p-4 rounded-2xl flex items-center gap-3 shadow-sm col-span-2 md:col-span-1">
+        <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-500 flex items-center justify-center"><i class="fa-solid fa-gamepad"></i></div>
+        <div class="text-xs font-bold leading-tight">Game UI Graphics<br><span class="text-slate-400 font-normal">100+ Assets Created</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER: 01 to 04 -->
+  <div class="max-w-7xl mx-auto px-6 pt-12 pb-4">
+    <div class="grid grid-cols-4 text-center font-bold text-xs uppercase tracking-wider text-white rounded-xl overflow-hidden shadow-sm">
+      <div class="bg-blue-600 py-3">01 Home</div>
+      <div class="bg-brandPink py-3">02 About Me</div>
+      <div class="bg-amber-500 py-3">03 Portfolio</div>
+      <div class="bg-brandBlue py-3">04 Case Study</div>
+    </div>
+  </div>
+
+  <!-- ABOUT ME -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-7 space-y-6">
+      <h2 class="text-4xl font-extrabold text-brandBlue">About <span class="text-brandPink">Me</span></h2>
+      <p class="text-slate-600 leading-relaxed text-sm">
+        Results-driven professional with experience in graphic design, web development, social media management, and workflow automation. Proven track record increasing social media engagement by 60%, boosting website visibility by 40%, and building custom Google Apps Script tools to eliminate manual data entry.
+      </p>
+
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white p-4 rounded-2xl border border-slate-100 flex items-center gap-3 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div><div class="text-lg font-black text-brandBlue leading-tight">BS IT</div><div class="text-[11px] text-slate-400">City College of Calamba</div></div>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border border-slate-100 flex items-center gap-3 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-pink-50 text-brandPink flex items-center justify-center font-bold"><i class="fa-solid fa-arrow-trend-up"></i></div>
+          <div><div class="text-xl font-black text-brandBlue leading-tight">+60%</div><div class="text-[11px] text-slate-400">Social Engagement</div></div>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border border-slate-100 flex items-center gap-3 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center font-bold"><i class="fa-solid fa-layer-group"></i></div>
+          <div><div class="text-xl font-black text-brandBlue leading-tight">100+</div><div class="text-[11px] text-slate-400">Game & Web Graphics</div></div>
+        </div>
+        <div class="bg-white p-4 rounded-2xl border border-slate-100 flex items-center gap-3 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-500 flex items-center justify-center font-bold"><i class="fa-solid fa-circle-check"></i></div>
+          <div><div class="text-xl font-black text-brandBlue leading-tight">99%</div><div class="text-[11px] text-slate-400">Record Accuracy</div></div>
+        </div>
+      </div>
+
+      <div class="pt-2">
+        <a href="#resume" class="inline-flex items-center gap-2 bg-brandPink text-white px-6 py-2.5 rounded-xl font-bold text-sm shadow hover:opacity-90 transition">
+          <i class="fa-solid fa-download text-xs"></i> View Full Resume
+        </a>
+      </div>
+    </div>
+
+    <!-- Portrait Placeholder -->
+    <div class="lg:col-span-5 flex justify-center">
+      <div class="w-64 h-72 rounded-[40px] border-4 border-dashed border-slate-200 bg-gradient-to-b from-pink-50 to-slate-100 flex flex-col items-center justify-center text-slate-400 shadow-inner">
+        <div class="w-20 h-20 rounded-full bg-white shadow-sm flex items-center justify-center text-3xl text-brandPink mb-3">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <span class="text-xs font-bold text-slate-600">Melanie Moya Photo</span>
+        <span class="text-[10px] text-slate-400">600 x 700 px</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="max-w-7xl mx-auto px-6 py-12">
+    <div class="text-center space-y-4 mb-8">
+      <h2 class="text-4xl font-extrabold text-brandBlue">My Portfolio</h2>
+      
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap justify-center gap-2 pt-2">
+        <button onclick="filterGallery('All')" class="filter-btn active bg-brandBlue text-white px-5 py-1.5 rounded-full text-xs font-bold uppercase transition">All</button>
+        <button onclick="filterGallery('Graphic Design')" class="filter-btn bg-white border border-slate-200 text-slate-600 px-5 py-1.5 rounded-full text-xs font-bold uppercase hover:bg-slate-100 transition">Graphic Design</button>
+        <button onclick="filterGallery('Web Design')" class="filter-btn bg-white border border-slate-200 text-slate-600 px-5 py-1.5 rounded-full text-xs font-bold uppercase hover:bg-slate-100 transition">Web Design</button>
+        <button onclick="filterGallery('Game UI')" class="filter-btn bg-white border border-slate-200 text-slate-600 px-5 py-1.5 rounded-full text-xs font-bold uppercase hover:bg-slate-100 transition">Game UI</button>
+        <button onclick="filterGallery('Automation')" class="filter-btn bg-white border border-slate-200 text-slate-600 px-5 py-1.5 rounded-full text-xs font-bold uppercase hover:bg-slate-100 transition">Automation / GAS</button>
+      </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </section>
+
+  <!-- BANNER: 05 CASE STUDY -->
+  <div class="max-w-7xl mx-auto px-6 pt-10 pb-4">
+    <div class="w-full bg-brandBlue py-3 text-white font-bold text-xs uppercase tracking-wider text-center rounded-xl">
+      05 Case Study
+    </div>
+  </div>
+
+  <!-- SECTION: 05 CASE STUDY -->
+  <section class="max-w-7xl mx-auto px-6 py-8">
+    <div class="bg-white rounded-3xl p-8 lg:p-12 border border-slate-200 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <div>
+          <span class="text-xs uppercase font-extrabold text-brandPink tracking-widest">CASE STUDY</span>
+          <h3 class="text-3xl font-extrabold text-brandBlue mt-1">Product Catalog & QA Automation System</h3>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 text-xs border-y border-slate-100 py-4">
+          <div><span class="text-slate-400 block font-medium">Company</span><strong class="text-slate-700">Fuji-Haya Electric Corp.</strong></div>
+          <div><span class="text-slate-400 block font-medium">Role</span><strong class="text-slate-700">MIS Staff / Designer</strong></div>
+          <div><span class="text-slate-400 block font-medium">Tools</span><strong class="text-slate-700">Catalog Design & GAS</strong></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          <div>
+            <strong class="text-slate-800 block font-bold mb-1">The Challenge</strong>
+            <p class="text-slate-500 leading-relaxed">Manual QA data recording was causing workflow delays, alongside a need for updated internal and external product catalogs.</p>
+          </div>
+          <div>
+            <strong class="text-slate-800 block font-bold mb-1">The Solution</strong>
+            <p class="text-slate-500 leading-relaxed">Designed professional product catalogs and engineered a QA department tracking system built with Google Apps Script & Sheets.</p>
+          </div>
+          <div>
+            <strong class="text-slate-800 block font-bold mb-1">The Result</strong>
+            <p class="text-slate-500 leading-relaxed">Automated repetitive data entry, reduced administrative errors, and delivered polished, standardized catalogs.</p>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-700 mb-3">Execution Process</h4>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <div class="border border-slate-100 p-3 rounded-xl bg-slate-50 text-center">
+              <i class="fa-solid fa-magnifying-glass text-brandPink mb-1 text-sm"></i>
+              <div class="font-bold text-[11px] text-slate-800">1. Audit</div>
+              <div class="text-[9px] text-slate-400 leading-tight">QA workflow review</div>
+            </div>
+            <div class="border border-slate-100 p-3 rounded-xl bg-slate-50 text-center">
+              <i class="fa-solid fa-code text-blue-500 mb-1 text-sm"></i>
+              <div class="font-bold text-[11px] text-slate-800">2. Scripting</div>
+              <div class="text-[9px] text-slate-400 leading-tight">Custom GAS functions</div>
+            </div>
+            <div class="border border-slate-100 p-3 rounded-xl bg-slate-50 text-center">
+              <i class="fa-solid fa-book-open text-amber-500 mb-1 text-sm"></i>
+              <div class="font-bold text-[11px] text-slate-800">3. Catalog</div>
+              <div class="text-[9px] text-slate-400 leading-tight">Layout & specs</div>
+            </div>
+            <div class="border border-slate-100 p-3 rounded-xl bg-slate-50 text-center">
+              <i class="fa-solid fa-circle-check text-emerald-500 mb-1 text-sm"></i>
+              <div class="font-bold text-[11px] text-slate-800">4. Rollout</div>
+              <div class="text-[9px] text-slate-400 leading-tight">Staff training & deploy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Case Study Placeholder -->
+      <div class="lg:col-span-5">
+        <div class="w-full h-80 rounded-2xl border-2 border-dashed border-slate-300 bg-slate-900 flex flex-col items-center justify-center text-slate-400 text-center p-6 shadow-md">
+          <div class="w-14 h-14 rounded-xl bg-slate-800 flex items-center justify-center text-xl text-amber-500 mb-2">
+            <i class="fa-solid fa-book-bookmark"></i>
+          </div>
+          <div class="font-bold text-slate-200 text-sm">Product Catalog & System Preview</div>
+          <div class="text-[10px] text-slate-500 mt-1">Fuji-Haya Electric Corporation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER: 06 SERVICES | 07 SKILLS -->
+  <div class="max-w-7xl mx-auto px-6 pt-10 pb-4">
+    <div class="grid grid-cols-2 text-center font-bold text-xs uppercase tracking-wider text-white rounded-xl overflow-hidden shadow-sm">
+      <div class="bg-brandPink py-3">06 Services</div>
+      <div class="bg-amber-500 py-3">07 Skills</div>
+    </div>
+  </div>
+
+  <!-- SECTION: SERVICES & SKILLS -->
+  <section class="max-w-7xl mx-auto px-6 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+      <!-- 06 SERVICES -->
+      <div id="services" class="lg:col-span-6 space-y-6">
+        <h3 class="text-3xl font-extrabold text-brandBlue">My Services</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-2">
+            <div class="w-10 h-10 rounded-xl bg-pink-50 text-brandPink flex items-center justify-center text-lg"><i class="fa-solid fa-pen-nib"></i></div>
+            <h4 class="font-bold text-sm text-brandBlue">Graphic & Catalog Design</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">Product catalogs, marketing banners, brochures, and brand materials using Photoshop & Illustrator.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-2">
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg"><i class="fa-solid fa-desktop"></i></div>
+            <h4 class="font-bold text-sm text-brandBlue">Website Development</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">Responsive company website design, layout optimization, improving online visibility by up to 40%.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-2">
+            <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-lg"><i class="fa-solid fa-bolt"></i></div>
+            <h4 class="font-bold text-sm text-brandBlue">Apps Script & Automation</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">Custom tracking systems, spreadsheet automations, and data pipelines to streamline daily office operations.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-2">
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center text-lg"><i class="fa-solid fa-share-nodes"></i></div>
+            <h4 class="font-bold text-sm text-brandBlue">Social Media Content</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">Engaging social media creatives, scheduled daily posting, and strategies that boost engagement by 60%.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-2">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-500 flex items-center justify-center text-lg"><i class="fa-solid fa-gamepad"></i></div>
+            <h4 class="font-bold text-sm text-brandBlue">Game UI & Assets</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">Character assets, UI layouts, and game screen elements contributing to successful commercial game titles.</p>
+          </div>
+          <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm space-y-2">
+            <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <h4 class="font-bold text-sm text-brandBlue">Tech & Admin Support</h4>
+            <p class="text-xs text-slate-500 leading-relaxed">Hardware and network troubleshooting, timekeeping/payroll systems, and accurate financial documentation.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 07 SKILLS -->
+      <div id="skills" class="lg:col-span-6 space-y-6">
+        <h3 class="text-3xl font-extrabold text-brandBlue">My Skills</h3>
+        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-5">
+          <!-- Design Tools -->
+          <div>
+            <span class="text-xs font-bold text-slate-700 uppercase tracking-wider block mb-2">Design Tools</span>
+            <div class="space-y-2 text-xs">
+              <div>
+                <div class="flex justify-between font-semibold mb-1"><span>Photoshop</span><span>90%</span></div>
+                <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden"><div class="bg-brandBlue h-full rounded-full" style="width: 90%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between font-semibold mb-1"><span>Illustrator</span><span>85%</span></div>
+                <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden"><div class="bg-brandBlue h-full rounded-full" style="width: 85%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between font-semibold mb-1"><span>Canva</span><span>95%</span></div>
+                <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden"><div class="bg-brandBlue h-full rounded-full" style="width: 95%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web & Automation Tools -->
+          <div>
+            <span class="text-xs font-bold text-slate-700 uppercase tracking-wider block mb-2">Web & Automation</span>
+            <div class="space-y-2 text-xs">
+              <div>
+                <div class="flex justify-between font-semibold mb-1"><span>Google Apps Script & Sheets</span><span>90%</span></div>
+                <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden"><div class="bg-brandPink h-full rounded-full" style="width: 90%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between font-semibold mb-1"><span>Website Design / HTML</span><span>80%</span></div>
+                <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden"><div class="bg-brandPink h-full rounded-full" style="width: 80%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between font-semibold mb-1"><span>After Effects (Basic)</span><span>65%</span></div>
+                <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden"><div class="bg-brandPink h-full rounded-full" style="width: 65%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Office & Admin Tools -->
+          <div>
+            <span class="text-xs font-bold text-slate-700 uppercase tracking-wider block mb-2">Office & Data Systems</span>
+            <div class="space-y-2 text-xs">
+              <div>
+                <div class="flex justify-between font-semibold mb-1"><span>MS Office (Excel, Word, PowerPoint)</span><span>95%</span></div>
+                <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden"><div class="bg-amber-500 h-full rounded-full" style="width: 95%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between font-semibold mb-1"><span>Timekeeping & Billing Systems</span><span>85%</span></div>
+                <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden"><div class="bg-amber-500 h-full rounded-full" style="width: 85%"></div></div>
+              </div>
+              <div>
+                <div class="flex justify-between font-semibold mb-1"><span>Hardware & Network Troubleshooting</span><span>85%</span></div>
+                <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden"><div class="bg-amber-500 h-full rounded-full" style="width: 85%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Productivity Logos -->
+          <div class="pt-2 border-t border-slate-100">
+            <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider block mb-3 text-center">Productivity & Platforms</span>
+            <div class="flex flex-wrap justify-center gap-4 text-slate-600 text-xs font-semibold">
+              <span class="flex items-center gap-1.5"><i class="fa-brands fa-google text-amber-500"></i> Google Workspace</span>
+              <span class="flex items-center gap-1.5"><i class="fa-brands fa-microsoft text-blue-600"></i> MS Office Suite</span>
+              <span class="flex items-center gap-1.5"><i class="fa-brands fa-meta text-blue-500"></i> Meta Business Suite</span>
+              <span class="flex items-center gap-1.5"><i class="fa-solid fa-network-wired text-emerald-500"></i> Network Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER: 08 RESUME | 09 CONTACT -->
+  <div class="max-w-7xl mx-auto px-6 pt-10 pb-4">
+    <div class="grid grid-cols-2 text-center font-bold text-xs uppercase tracking-wider text-white rounded-xl overflow-hidden shadow-sm">
+      <div class="bg-blue-800 py-3">08 Resume</div>
+      <div class="bg-brandPink py-3">09 Contact</div>
+    </div>
+  </div>
+
+  <!-- SECTION: RESUME & CONTACT -->
+  <section class="max-w-7xl mx-auto px-6 py-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+      <!-- 08 RESUME -->
+      <div id="resume" class="lg:col-span-6 space-y-6">
+        <div>
+          <h3 class="text-3xl font-extrabold text-brandBlue">Resume / CV</h3>
+          <p class="text-xs text-slate-500 mt-1">Review Melanie Moya's professional work experience and background.</p>
+        </div>
+
+        <div class="flex gap-3">
+          <a href="#" class="bg-brandBlue text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow hover:bg-slate-800 transition">Download CV (PDF)</a>
+          <a href="#" class="bg-brandPink text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow hover:opacity-90 transition">Download CV (DOCX)</a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-white p-6 rounded-2xl border border-slate-100 shadow-sm text-xs">
+          <!-- Experience -->
+          <div class="space-y-4">
+            <h4 class="font-bold text-sm text-brandBlue border-b pb-2">Work Experience</h4>
+            <div>
+              <span class="text-brandPink font-bold text-[10px]">Recent / Present</span>
+              <div class="font-bold text-slate-800">MIS Staff</div>
+              <p class="text-slate-500 text-[11px] font-medium">Fuji-Haya Electric Corporation</p>
+              <p class="text-slate-400 text-[10px] mt-0.5">Product catalogs, QA Google Apps Script tracking systems & automations.</p>
+            </div>
+            <div>
+              <span class="text-brandPink font-bold text-[10px]">Dec 2023 - Mar 2025</span>
+              <div class="font-bold text-slate-800">Website Designer / HR & Accounting Assistant</div>
+              <p class="text-slate-500 text-[11px] font-medium">Aplus Pack Inc.</p>
+              <p class="text-slate-400 text-[10px] mt-0.5">Company website design (+40% visibility), social media (+60% engagement), billing.</p>
+            </div>
+            <div>
+              <span class="text-brandPink font-bold text-[10px]">Jan 2022 - Sep 2023</span>
+              <div class="font-bold text-slate-800">Graphic Artist</div>
+              <p class="text-slate-500 text-[11px] font-medium">Aruze Global Shared Services Phils.</p>
+              <p class="text-slate-400 text-[10px] mt-0.5">100+ game graphics, character art, and screens for 5+ released game titles.</p>
+            </div>
+            <div>
+              <span class="text-brandPink font-bold text-[10px]">May 2021 - Oct 2021</span>
+              <div class="font-bold text-slate-800">Image Technician</div>
+              <p class="text-slate-500 text-[11px] font-medium">Straive (formerly SPi Global)</p>
+              <p class="text-slate-400 text-[10px] mt-0.5">1,000+ files inspected and quality-assured with 99% accuracy rate.</p>
+            </div>
+          </div>
+
+          <!-- Education & Other Roles -->
+          <div class="space-y-4">
+            <h4 class="font-bold text-sm text-brandBlue border-b pb-2">Education</h4>
+            <div>
+              <span class="text-brandPink font-bold text-[10px]">Graduated 2019</span>
+              <div class="font-bold text-slate-800 leading-snug">Bachelor of Science in Information Technology</div>
+              <p class="text-slate-400 text-[11px]">City College of Calamba</p>
+            </div>
+
+            <h4 class="font-bold text-sm text-brandBlue border-b pb-1 pt-2">Earlier Background</h4>
+            <ul class="space-y-2 text-slate-600 text-[11px]">
+              <li>
+                <strong class="text-slate-700 block">Doctor's Secretary & Receptionist</strong>
+                <span class="text-slate-400 text-[10px]">Golden Medics Pharmacy (2020)</span>
+              </li>
+              <li>
+                <strong class="text-slate-700 block">Warehouse & Sales Documentation</strong>
+                <span class="text-slate-400 text-[10px]">SIIX Coxon Precision Phils. (2019 - 2020)</span>
+              </li>
+              <li>
+                <strong class="text-slate-700 block">Outpatient Dept. Clerk</strong>
+                <span class="text-slate-400 text-[10px]">Global Care Medical Center (2018 - 2019)</span>
+              </li>
+            </ul>
+
+            <h4 class="font-bold text-sm text-brandBlue border-b pb-1 pt-2">Languages</h4>
+            <div class="text-[11px] text-slate-600 space-y-1">
+              <div><strong class="text-slate-700">English:</strong> Conversational</div>
+              <div><strong class="text-slate-700">Filipino:</strong> Native</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 09 CONTACT FORM -->
+      <div id="contact" class="lg:col-span-6 space-y-6">
+        <div>
+          <h3 class="text-3xl font-extrabold text-brandBlue">Let's Work Together!</h3>
+          <p class="text-xs text-slate-500 mt-1">Send a message to Melanie Moya for project inquiries and collaborations.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+          <form id="contactForm" class="space-y-3">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <input type="text" name="name" required placeholder="Your Name" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs focus:outline-brandPink">
+              <input type="email" name="email" required placeholder="Your Email" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs focus:outline-brandPink">
+            </div>
+            <select name="projectType" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs text-slate-500 focus:outline-brandPink">
+              <option value="General Inquiry">Select Project Type</option>
+              <option value="Graphic Design / Catalog">Graphic Design / Catalog</option>
+              <option value="Website Development">Website Development</option>
+              <option value="Google Apps Script Automation">Google Apps Script / Automation</option>
+              <option value="Social Media Content">Social Media Content</option>
+            </select>
+            <textarea name="message" rows="3" required placeholder="Your Message" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs focus:outline-brandPink"></textarea>
+            
+            <button type="submit" id="submitBtn" class="bg-brandPink text-white px-6 py-2.5 rounded-xl font-bold text-xs shadow hover:opacity-90 transition flex items-center gap-2">
+              <span>Send Message</span> <i class="fa-solid fa-paper-plane text-[10px]"></i>
+            </button>
+            <div id="formStatus" class="text-xs font-semibold mt-1 hidden"></div>
+          </form>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 pt-4 mt-4 border-t border-slate-100 text-[11px] text-slate-500">
+            <div><i class="fa-solid fa-envelope text-brandPink mr-1"></i> melanielmoya@gmail.com</div>
+            <div><i class="fa-solid fa-phone text-brandPink mr-1"></i> 0975-865-4226</div>
+            <div><i class="fa-solid fa-location-dot text-brandPink mr-1"></i> Calamba City, Laguna</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER: 10 TESTIMONIALS -->
+  <div class="max-w-7xl mx-auto px-6 pt-10 pb-4">
+    <div class="w-full bg-amber-500 py-3 text-white font-bold text-xs uppercase tracking-wider text-center rounded-xl">
+      10 Testimonials
+    </div>
+  </div>
+
+  <!-- SECTION: 10 TESTIMONIALS -->
+  <section class="max-w-7xl mx-auto px-6 py-8">
+    <div class="text-center mb-8">
+      <h3 class="text-3xl font-extrabold text-brandBlue">What Clients & Supervisors Say</h3>
+    </div>
+    <div id="testimonials-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-200 mt-16 pt-12 pb-6">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-8 text-xs pb-10">
+      <div class="md:col-span-4 space-y-3">
+        <span class="text-2xl font-black text-brandBlue tracking-tighter">MM<span class="text-brandPink">.</span></span>
+        <div class="font-bold text-slate-700">Melanie Moya</div>
+        <p class="text-slate-400 leading-relaxed max-w-xs">
+          Graphic & Web Designer and Automation Specialist based in Calamba City, Laguna, Philippines.
+        </p>
+        <div class="flex gap-2 text-slate-400 pt-2">
+          <a href="https://linkedin.com/in/melaniemoya" target="_blank" class="w-7 h-7 rounded-full border border-slate-200 flex items-center justify-center hover:bg-brandBlue hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:melanielmoya@gmail.com" class="w-7 h-7 rounded-full border border-slate-200 flex items-center justify-center hover:bg-brandBlue hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:09758654226" class="w-7 h-7 rounded-full border border-slate-200 flex items-center justify-center hover:bg-brandBlue hover:text-white transition"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+
+      <div class="md:col-span-2 space-y-2">
+        <h5 class="font-bold text-slate-800 text-sm mb-3">Quick Links</h5>
+        <ul class="space-y-1.5 text-slate-500">
+          <li><a href="#home" class="hover:text-brandBlue">Home</a></li>
+          <li><a href="#about" class="hover:text-brandBlue">About Me</a></li>
+          <li><a href="#portfolio" class="hover:text-brandBlue">Portfolio</a></li>
+          <li><a href="#services" class="hover:text-brandBlue">Services</a></li>
+          <li><a href="#skills" class="hover:text-brandBlue">Skills</a></li>
+          <li><a href="#resume" class="hover:text-brandBlue">Resume</a></li>
+          <li><a href="#contact" class="hover:text-brandBlue">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3 space-y-2">
+        <h5 class="font-bold text-slate-800 text-sm mb-3">Core Expertise</h5>
+        <ul class="space-y-1.5 text-slate-500">
+          <li>Graphic Design & Product Catalogs</li>
+          <li>Website Development & UI</li>
+          <li>Google Apps Script Automation</li>
+          <li>Social Media Content Creation</li>
+          <li>Game UI & Character Art</li>
+          <li>Data QA & System Troubleshooting</li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3 space-y-3">
+        <h5 class="font-bold text-slate-800 text-sm mb-2">Have a project in mind?</h5>
+        <p class="text-slate-400">Available for freelance opportunities and full-time inquiries.</p>
+        <a href="#contact" class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-accentOrange text-white px-5 py-2 rounded-xl font-bold shadow hover:opacity-90 transition">
+          Let's Talk <i class="fa-solid fa-paper-plane text-[10px]"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="border-t border-slate-100 max-w-7xl mx-auto px-6 pt-6 text-center text-[11px] text-slate-400">
+      © 2025 Melanie Moya. All Rights Reserved. Hosted on GitHub Pages.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
